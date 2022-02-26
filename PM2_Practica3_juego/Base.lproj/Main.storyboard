@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PM2_Practica3_juego" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="WRT-IJ-EUb">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="898"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nqp-FL-ija">
+                                <rect key="frame" x="20" y="271.5" width="374" height="369.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reversoBaraja" translatesAutoresizingMaskIntoConstraints="NO" id="G4I-D9-wFz">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="369.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="172" id="VKx-OP-JlD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reversoBaraja" translatesAutoresizingMaskIntoConstraints="NO" id="Gl1-P8-eJg">
+                                        <rect key="frame" x="202" y="0.0" width="172" height="369.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vegas" translatesAutoresizingMaskIntoConstraints="NO" id="yUk-5V-Qsn">
+                                <rect key="frame" x="34" y="82.5" width="327" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="Kg5-nA-345"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tus cartas:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3Y-Zy-b2O">
+                                <rect key="frame" x="0.0" y="64" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNH-I7-UuY">
+                                <rect key="frame" x="148" y="710" width="119" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="EJ8-Zh-m9w"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jugar">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="JugarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUP-R6-fXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxt-Yn-1bV">
+                                <rect key="frame" x="148" y="781" width="119" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7D9-H0-SBx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Apostar ">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yUk-5V-Qsn" firstAttribute="top" secondItem="C3Y-Zy-b2O" secondAttribute="bottom" constant="18.5" id="0ZT-u5-EJr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WRT-IJ-EUb" secondAttribute="bottom" constant="-35" id="7yO-sv-ii9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUk-5V-Qsn" secondAttribute="trailing" constant="53" id="AXH-8d-3bc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nqp-FL-ija" secondAttribute="trailing" constant="20" id="Ec5-wa-UWt"/>
+                            <constraint firstItem="WRT-IJ-EUb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FHV-Sf-icJ"/>
+                            <constraint firstItem="yUk-5V-Qsn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="GDs-5Y-jhS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C3Y-Zy-b2O" secondAttribute="trailing" id="GcC-RR-Hvp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xxt-Yn-1bV" secondAttribute="bottom" constant="33" id="H4x-22-G8B"/>
+                            <constraint firstItem="xxt-Yn-1bV" firstAttribute="top" secondItem="qNH-I7-UuY" secondAttribute="bottom" constant="23" id="SJX-oC-LA7"/>
+                            <constraint firstItem="qNH-I7-UuY" firstAttribute="leading" secondItem="xxt-Yn-1bV" secondAttribute="leading" id="Y1a-nW-jXr"/>
+                            <constraint firstItem="qNH-I7-UuY" firstAttribute="trailing" secondItem="xxt-Yn-1bV" secondAttribute="trailing" id="beV-AM-kzJ"/>
+                            <constraint firstItem="qNH-I7-UuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="eYQ-Kb-ONy"/>
+                            <constraint firstItem="nqp-FL-ija" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gfl-6p-5uB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRT-IJ-EUb" secondAttribute="trailing" id="h7w-V8-4Z7"/>
+                            <constraint firstItem="qNH-I7-UuY" firstAttribute="top" secondItem="nqp-FL-ija" secondAttribute="bottom" constant="69" id="jSp-qe-xn4"/>
+                            <constraint firstItem="C3Y-Zy-b2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rlA-wu-owD"/>
+                            <constraint firstItem="nqp-FL-ija" firstAttribute="top" secondItem="yUk-5V-Qsn" secondAttribute="bottom" priority="990" constant="25" id="uK8-Ls-6po"/>
+                            <constraint firstItem="nqp-FL-ija" firstAttribute="centerX" secondItem="qNH-I7-UuY" secondAttribute="centerX" id="xWv-ao-c8V"/>
+                            <constraint firstItem="WRT-IJ-EUb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-45" id="xb5-Ao-yTm"/>
+                            <constraint firstItem="C3Y-Zy-b2O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yZL-BJ-hTB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="virecarta1" destination="G4I-D9-wFz" id="i8V-xL-Noe"/>
+                        <outlet property="virecarta2" destination="Gl1-P8-eJg" id="Iqe-FW-6Fk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo" width="800" height="530"/>
+        <image name="reversoBaraja" width="703" height="1102"/>
+        <image name="vegas" width="637" height="455"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
